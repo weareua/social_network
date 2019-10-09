@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Social Network</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger static-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'index' %}">Social Network</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <table id="posts" class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center">Author</th>
+            <th scope="col" class="text-center">Text</th>
+            <th scope="col" class="text-center"><i class="fas fa-heart"></i></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for object in data %}
+          <tr>
+            <td>{{ object.author.username}}</td>
+            <th>{{ object.text}}</td>
+            <td>{{ object.likes_quantity}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

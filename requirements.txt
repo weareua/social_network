@@ -1,0 +1,6 @@
+Django
+djangorestframework
+djangorestframework_simplejwt
+pyhunter
+python-dotenv
+lorem

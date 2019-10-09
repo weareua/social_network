@@ -3,6 +3,10 @@ It's a web based application that:
 - generates n number of users and fills posts and likes for them  
 - provides the REST API with the possibility of authorization (login/register), new post creation, posts liking functionality  
 
+
+![Alt text](screenshot.png =250px)
+
+
 ## Stack
 This application is built using Django and Django REST framework and JWT.
 
@@ -30,25 +34,21 @@ V. Install application dependencies in the isolated environment
 ```
 $ pip install -r requirements.txt
 ```
-VI. Create new instruction for Post database table:
-```
-$ python manage.py makemigrations
-```
-VII. Create necessarry tables in the database:
+VI. Create necessarry tables in the database:
 ```
 $ python manage.py migrate
 ```
-VIII. Populate database with automatically generated users, posts and likes:
+VII. Populate database with automatically generated users, posts and likes:
 ```
 $ python manage.py populate
 ```
-IX. Register on [Hunter](https://hunter.io/) and obtain its API key
+VIII. Register on [Hunter](https://hunter.io/) and obtain its API key
 We'll use this service to verify potential user email address.  
 When you'll register your self there, you have to get API key and place it as the value for variable HUNTER_API in the env file. You can find it using this path:  
 ```  
 core/.env  
 ```
-X. Run application's local server:
+IX. Run application's local server:
 ```
 $ python manage.py runserver
 ```

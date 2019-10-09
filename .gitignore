@@ -1,0 +1,34 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+venv/
+
+# Django stuff:
+*.log
+
+#vim Explorer
+#### Vim ###
+## swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+.ropeproject
+
+# DB
+*.db
+*.sqlite3
+
+
+
+
+*.mo
+
+# IDE
+.idea

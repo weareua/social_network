@@ -4,7 +4,7 @@ It's a web based application that:
 - provides the REST API with the possibility of authorization (login/register), new post creation, posts liking functionality  
 
 
-![Alt text](screenshot.png =250px)
+![Alt text](screenshot.png )
 
 
 ## Stack
